@@ -1,0 +1,79 @@
+/* phần 2: tạo base */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+/* Khôi phục lại cở chữ theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ================ Common ===================== */
+.main-content {
+  width: 1024px;
+  max-width: calc(100% - 24px);
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --color-heading: #1ebfc1;
+}
+/* ================ Header ===================== */
+.header .body {
+  display: flex;
+  padding: 64px 0 8px;
+}
+.header .body .nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  color: #2f3a3b;
+  padding: 8px 19.5px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.header .body .action {
+  margin-left: 115px;
+  color: #494949;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  gap: 24px;
+}
+.header .action .btn-sign-nup1 {
+  display: inline;
+  margin-left: 24px;
+  padding: 12px 23px 12px 24px;
+  border-radius: 6px;
+  border: 1px solid var(--color-heading);
+  width: 108px;
+  height: 48px;
+  flex-shrink: 0;
+  color: #1ebfc1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header .nav a:hover {
+  opacity: 0.8;
+}
+.header .action .btn-sign-nup1:hover {
+  background-color: var(--color-heading);
+  color: white;
+}
