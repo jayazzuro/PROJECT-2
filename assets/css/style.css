@@ -66,7 +66,6 @@ a {
   border: 1px solid var(--color-heading);
   width: 108px;
   height: 48px;
-  flex-shrink: 0;
   color: #1ebfc1;
   text-align: center;
   font-size: 1.6rem;
@@ -352,9 +351,10 @@ a {
 .course-bottom {
   display: flex;
   gap: 47px;
+  position: relative;
 }
 .course-bottom .item .img {
-  width: 100%;
+  width: 359px;
   height: 393px;
   border-radius: 8px;
   opacity: 0.55;
@@ -392,6 +392,282 @@ a {
   line-height: normal;
   margin-bottom: 18px;
 }
+.course-bottom .item .content .course-detail .desc::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-heading);
+  margin-bottom: 4px;
+}
 .course-bottom .item .content .course-detail {
   display: flex;
+  gap: 10px;
+}
+.course-bottom .item .content {
+  position: absolute;
+  top: 322px;
+  margin-left: 17px;
+  width: 325px;
+  height: 195px;
+  padding: 18px 82px 29px 25px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* ===================    <!-- course2 --> =====================*/
+.course2 {
+  margin-top: 227px;
+  padding: 30px 0 8px;
+  margin-left: 291px;
+}
+.course2 .c2 {
+  display: flex;
+  justify-content: center;
+  gap: 202px;
+  width: 862px;
+  height: 131px;
+}
+.course2 .c2 .item {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.course2 .c2 .item .title {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 11px;
+}
+.course2 .c2 .item .desc {
+  color: #767e7e;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ================== Comment ===================== */
+.comment {
+  margin-top: 226px;
+  padding: 30px 0 8px;
+}
+.comment .body {
+  display: flex;
+  gap: 72px;
+}
+/* ==== COMMENT LEFT ==== */
+.comment .comment-left .icon {
+  margin-top: 37px;
+}
+.comment .comment-left .desc {
+  margin-top: 26px;
+  color: #5d6564;
+  width: 419px;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.comment .comment-left .desc1 {
+  margin-top: 33px;
+  margin-bottom: 52px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.comment .comment-left strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.comment .comment-left .desc1::before {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.comment .comment-left .control {
+  display: flex;
+  gap: 30px;
+}
+.comment .comment-left .button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: var(--color-heading);
+}
+
+.comment .comment-left .button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* ==== COMMENT RIGHT ==== */
+.comment .comment-right {
+  position: relative;
+}
+.comment .comment-right .pic1 {
+  position: absolute;
+  margin-left: 66px;
+  width: 92px;
+  height: 92px;
+  border-radius: 92px;
+  object-fit: cover;
+}
+.comment .comment-right .pic2 {
+  position: absolute;
+  margin-left: 569px;
+  margin-top: 19px;
+  width: 110px;
+  height: 110px;
+  border-radius: 110px;
+  object-fit: cover;
+}
+.comment .comment-right .pic-desc {
+  width: 78px;
+  height: 78px;
+  border-radius: 78px;
+  object-fit: cover;
+}
+.comment .comment-right .pic3 {
+  position: absolute;
+  margin-left: 569px;
+  margin-top: 374px;
+}
+.comment .comment-right .pic4 {
+  position: absolute;
+  margin-left: 212px;
+  margin-top: 403px;
+}
+.comment .comment-right .pic5 {
+  position: absolute;
+  margin-top: 258px;
+}
+
+.comment .comment-right .pic6 {
+  position: absolute;
+  margin-left: 273px;
+  margin-top: 107px;
+  width: 235px;
+  height: 235px;
+  border-radius: 235px;
+  object-fit: cover;
+}
+
+/* ================== Admit ===================== */
+.admit {
+  margin-top: 92px;
+  padding: 30px 0 8px;
+  background-color: #def6f5;
+}
+.admit .body {
+  display: flex;
+  gap: 410px;
+}
+/* <!-- ADMIT-LEFT --> */
+.admit .admit-left .title {
+  margin-top: 76px;
+  margin-bottom: 18px;
+  width: 420px;
+  color: #070707;
+  font-size: 4.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.admit .admit-left .desc {
+  width: 397px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 88px;
+}
+/* <!-- ADMIT-Right --> */
+.admit .admit-right .btn {
+  border-radius: 14px;
+  margin-top: 96px;
+  padding: 20px 41px 21px;
+  background-color: var(--color-heading);
+  cursor: pointer;
+}
+
+.admit .admit-right .btn:hover {
+  opacity: 0.9;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+/* ================ FOOTER ===================== */
+.footer {
+  margin-top: 92px;
+  padding: 30px 0 8px;
+}
+
+/* ==== Footer top ================*/
+.footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-top .item .title {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 26px;
+}
+.footer .footer-top .item .list {
+  color: #535353;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .footer-top .item .list li:nth-child(n + 1) {
+  margin-top: 20px;
+}
+
+.footer .footer-top .item .list1 .social {
+  display: flex;
+  color: #535353;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer .footer-top .item .list1 .social .icon {
+  margin-right: 9px;
+}
+.footer .footer-top .item .list1 .social:nth-child(n + 1) {
+  margin-top: 20px;
+}
+/* ==== Footer bottom ================*/
+.footer .footer-bottom {
+  margin-top: 42px;
+  padding: 30px 0 8px;
+  margin-bottom: 42px;
+}
+.footer .footer-bottom .desc {
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
